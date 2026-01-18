@@ -1,0 +1,431 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: verdana, arial, sans-serif;
+}
+/*pour la stylisation du header et son contenu*/
+header{
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header>h1{
+	font-size: 25px;
+	padding-left: 20px;
+}
+.center{
+	display: flex;
+	gap: 10px;
+}
+nav{
+	width: 100px;
+	height: 2.5rem;
+	background: dodgerblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+}
+nav>a{
+	color: white;
+}
+/*stylisation du div parent*/
+.parent{
+	width: 92%;
+	height: 21rem;
+	display: flex;
+	margin-left: 60px;
+	margin-top: 20px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 10px;
+}
+/*stylisation du premier enfant qui est a gauche avec la barre de recherche*/
+.first-child{
+	width: 38%;
+	height: 21rem;
+	display: flex;
+	justify-content: center;
+	padding-left: 65px;
+	gap: 15px;
+	flex-direction: column;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.en-gras{
+	font-size: 35px;
+	font-weight: bold;
+}
+.first-child>button{
+	width: 120px;
+	height: 2.5rem;
+	background: dodgerblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	border-radius: 20px;
+}
+button>a{
+	color: white;
+}
+/*styles pour la barre de recherche*/
+.first-child>.search{
+	display: flex;
+}
+.search>input{
+	width: 270px;
+	height: 2rem;
+	padding-left: 10px;
+	border: 2px solid gainsboro;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	outline: none;
+}
+/*styles pour l'icone*/
+.search>i{
+	width: 30px;
+	height: 2rem;
+	background: dodgerblue;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+/*stylisation du deuxieme enfant avec les photos en rond en position absolute*/
+.second-child1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 5.7rem;
+	left: 45%;
+}
+.second-child1>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom en bas sur la premiere photo*/
+.nom1{
+	width: 100px;
+	height: 1.5rem;
+	background: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	position: absolute;
+	top: 13.6rem;
+	left: 46.9%;
+	color: white;
+}
+.second-child2{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 15.4rem;
+	left: 55%;
+}
+.second-child2>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom en bas sur la deuxieme photo*/
+.nom2{
+	width: 100px;
+	height: 1.5rem;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	position: absolute;
+	top: 23.5rem;
+	left: 56.8%;
+}
+.second-child3{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 5.7rem;
+	left: 65%;
+}
+.second-child3>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom en bas sur la troisieme photo*/
+.nom3{
+	width: 100px;
+	height: 1.5rem;
+	background: orange;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	position: absolute;
+	top: 13.6rem;
+	left: 67%;
+	color: white;
+}
+.second-child4{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 15.4rem;
+	left: 75%;
+}
+.second-child4>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom en bas sur la quatrieme photo*/
+.nom4{
+	width: 100px;
+	height: 1.5rem;
+	background: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	position: absolute;
+	top: 23.5rem;
+	left: 77%;
+	color: white;
+}
+.second-child5{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 5.7rem;
+	left: 84%;
+}
+.second-child5>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom en bas sur la cinquieme photo*/
+.nom5{
+	width: 100px;
+	height: 1.5rem;
+	background: blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	position: absolute;
+	top: 13.6rem;
+	left: 85.8%;
+	color: white;
+}
+.title{
+	font-size: 23px;
+	padding-top: 20px;
+	text-align: center;
+}
+.title2{
+	font-size: 13px;
+	padding-top: 20px;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+}
+/*styles pour la section contenant 4 autres sections pour les explications de l'utilite du site*/
+.pcpl{
+	width: 100%;
+	height: 18rem;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+/*styles pour lasection enfant de pcpl*/
+.expli{
+	width: 22%;
+	height: 17rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	background: white;
+	border-radius: 10px;
+}
+.expli i{
+	font-size: 50px;
+	align-self: center;
+	color: dodgerblue;
+}
+.expli h2{
+	font-size: 16px;
+	color: rgba(0,0,0,0.7);
+	text-align: center;
+}
+.expli p{
+	font-size: 14px;
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+}
+/*styles pour le div en blue*/
+.safe{
+	width: 92.5%;
+	height: 17.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: steelblue;
+	gap: 10px;
+	margin-top: 55px;
+	padding-left: 100px;
+}
+.safe>h2{
+	font-size: 18px;
+	color: whitesmoke;
+}
+.safe>p{
+	color: rgba(287,205,200,0.7);
+}
+/*styles pour le premier div en position absolute sur le div safe*/
+.un{
+	width: 400px;
+	height: 7rem;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding-left: 10px;
+	background: white;
+	position: absolute;
+	top: 52rem;
+	left: 55%;
+}
+/*styles pour le deuxieme div en position absolute sur le div safe*/
+.deux1{
+	width: 400px;
+	height: 7rem;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding-left: 10px;
+	background: white;
+	position: absolute;
+	top: 60rem;
+	left: 65%;
+}
+/*styles pour le troisieme div en position absolute sur le div safe*/
+.trois{
+	width: 400px;
+	height: 7rem;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding-left: 10px;
+	background: white;
+	position: absolute;
+	top: 68rem;
+	left: 55%;
+}
+/*styles pour les photos se rond dans les div en position absolute sur safe dont(.un, .deux1, .trois)*/
+.pic{
+	width: 80px;
+	height: 80px;
+}
+.pic>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour le nom et l'explication dans les div en position absolute sur safe dont(.un, .deux1, .trois)*/
+.presentation{
+	display: flex;
+	flex-direction: column;
+}
+.presentation>h3{
+	font-size: 17px;
+	color: rgba(0,0,0,0.7);
+}
+.presentation>p{
+	font-size: 13px;
+	color: rgba(0,0,0,0.4);
+}
+/*styles pour le titre dont suit des listes non ordonnees*/
+.benefit{
+	padding-top: 80px;
+	font-size: 24px;
+	margin-left: 40px;
+	color: rgba(0,0,0,6);
+}
+/*styles pour la section contenant les listes non ordonnees et la photo au milieu*/
+.final{
+	width: 95%;
+	height: 10rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+/*styles pour les listes non ordonnees a gauche*/
+.left{
+	width: 38%;
+	height: 10rem;
+	display: flex;
+	padding-left: 50px;
+	justify-content: center;
+	flex-direction: column;
+}
+.left>ul{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+/*styles pour la photo en rond au milieu des listes non ordonnees*/
+.photo{
+	width: 120px;
+	height: 130px;
+}
+.photo>img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+/*styles pour les listes non ordonnees a droite*/
+.right{
+	width: 38%;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	padding-left: 90px;
+	flex-direction: column;
+}
+.right>ul{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+/*styles pour le footer et son contenu*/
+footer{
+	background: royalblue;
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer>p{
+	font-size: 18px;
+	color: whitesmoke;
+}
